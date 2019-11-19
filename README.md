@@ -1,6 +1,13 @@
-It should remove all values from list a, which are present in list b.
+There is an array with some numbers. All numbers are equal except for one. Try to find it!
 
-array_diff([1,2],[1]) == [2]
-If a value is present in b, all of its occurrences must be removed from the other:
+findUniq([ 1, 1, 1, 2, 1, 1 ]) === 2
+findUniq([ 0, 0, 0.55, 0, 0 ]) === 0.55
+It’s guaranteed that array contains more than 3 numbers.
 
-array_diff([1,2,2,2,3],[2]) == [1,3]
+The tests contain some very huge arrays, so think about performance.
+
+This is the first kata in series:
+
+Find the unique number (this kata)
+Find the unique string
+Find The Unique
