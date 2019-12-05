@@ -1,24 +1,27 @@
-//the sum of fractions
-function addFraction(numerator1, denominator1, numerator2, denominator2) {
-
-    let denominator3 = (denominator1 * denominator2) / gcd(denominator1, denominator2);
-    let numerator3 = (numerator1 * (denominator3 / denominator1)) + (numerator2 * (denominator3 / denominator2));
-    let ratio = gcd(numerator3, denominator3);
-
-    denominator3 = denominator3 / ratio;
-    numerator3 = numerator3 / ratio;
-
-    return [numerator3, denominator3];
-}
-
-function gcd(a, b) {
-    if (a === 0) {
-        return b;
+function amidakuji(ar) {
+    const result = [];
+    for (let inputData = 0; inputData <= ar[0].length; inputData++) {
+        let counter = inputData;
+        for (let i = 0; i < ar.length; i++) {
+            const element = ar[i];
+            if (counter === 0) {
+                if (element[counter] == 1) counter++;
+            } else (element[counter - 1] == 1) ? counter-- : (element[counter] == 1) ? counter++ : counter;
+        }
+        result[counter] = inputData;
     }
-    return gcd(b % a, a);
+    return (result);
 }
 
-console.log(addFraction(1,2,2,3));
-console.log(addFraction(2,2,3,4));
-console.log(addFraction(2,33,44,66));
-console.log(addFraction(33,44,54,65));
+let ladder = [
+    '001001',
+    '010000',
+    '100100',
+    '001000',
+    '100101',
+    '010010',
+    '101001',
+    '010100'
+];
+
+amidakuji(ladder); // [4, 2, 0, 5, 3, 6, 1]
