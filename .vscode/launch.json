@@ -2,6 +2,160 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExampleStream",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleStream",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleLymda",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleLymda",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Examlpe_Lybda_Stream",
+            "request": "launch",
+            "mainClass": "javaExample.main.Examlpe_Lybda_Stream",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Examlle_If",
+            "request": "launch",
+            "mainClass": "javaExample.main.Examlle_If",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleDo",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleDo",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleWhile1",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleWhile1",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleLinkedList",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleLinkedList",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleRuntimeException",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleRuntimeException",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExamplePerson_Employee",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExamplePerson_Employee",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleWhile",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleWhile",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleDo_While",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleDo_While",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleQuiz1",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleQuiz1",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example7",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example7",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example6",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example6",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example5",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example5",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example4",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example4",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example3",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example3",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestClass",
+            "request": "launch",
+            "mainClass": "javaExample.main.TestClass",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example2",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example2",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainClass",
+            "request": "launch",
+            "mainClass": "javaExample.main.MainClass",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example1",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example1",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Example",
+            "request": "launch",
+            "mainClass": "javaExample.main.Example",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "javaExample.main.Main",
