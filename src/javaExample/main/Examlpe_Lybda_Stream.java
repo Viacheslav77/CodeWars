@@ -25,7 +25,7 @@ public class Examlpe_Lybda_Stream {
             }
         });
 
-        switcher.addListener( (sender) -> System.out.println("Anonim Lymda On"));
+        switcher.addListener( sender -> System.out.println("Anonim Lymda On"));
         switcher.addListener( sender -> System.out.println("Anonim Lymda1 On"));
 
         switcher.addListener( s -> Examlpe_Lybda_Stream.fire(s));
@@ -47,7 +47,6 @@ interface ElectrocitiConsumer {
 }
 
 class Switcher {
-    
 
     private List<ElectrocitiConsumer> lstCunsumers = new ArrayList<>();
 

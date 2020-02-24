@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExPersonStream",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExPersonStream",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExStream",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExStream",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - divideByZero",
+            "request": "launch",
+            "mainClass": "javaExample.main.divideByZero",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleIntStream",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleIntStream",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleArrayList",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleArrayList",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExampleTer",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExampleTer",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExampleStream",
             "request": "launch",
             "mainClass": "javaExample.main.ExampleStream",
