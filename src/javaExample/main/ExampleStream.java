@@ -19,10 +19,10 @@ public class ExampleStream {
     }
 
     public static Optional <Artical> getArtJava() {
-        return articals != null ? articals.stream()
+        return articals == null ? Optional.empty() : 
+                    articals.stream()
                         .filter(a -> (a != null ? a : new Artical("")).getTitle().contains("JAVA"))
-                        .findFirst() : Optional.empty() ;
-                
+                        .findFirst() ;              
     }
 
 }

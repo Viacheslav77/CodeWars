@@ -4,17 +4,30 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ExPersonStream {
+public class ExPersonStreamCollectReduse {
 
     public static void main(String[] args) {
         
         List < Person > people = Arrays.asList(
             null, new Person ("Pasha", 20), new Person ("Pety", 21),  new Person ("Gena", 21), new Person ("Masha", 21), new Person ("Jon", 12));
         
+        System.out.println("Reduce1");
+        printReduce( people) ;
+        printReduce( null );
+
+        System.out.println("Reduce2");
+        printReduce1( people );
+        printReduce1( null );
+
+        System.out.println("Reduce3");
+        printReduce2( people );
+        printReduce2( null );
+        
+
         System.out.println("Starts With P");
         printPersonStartsWithP(people);
         printPersonStartsWithP(null);
-        
+
         System.out.println("Grouping By Age");
         printPersonGroupingByAge(people);
         printPersonGroupingByAge(null);
@@ -22,7 +35,7 @@ public class ExPersonStream {
         System.out.println("Print Averaging Doublee");
         printAveragingDouble(people);
         printPersonGroupingByAge(null);
-        
+
         System.out.println("Print Summarizing In");
         printSummarizingIn(people);
         printSummarizingIn(null);
@@ -31,7 +44,6 @@ public class ExPersonStream {
         printAverage(people);
         printAverage(null);
 
-
         System.out.println("Print Joinign");
         printJoinig(people);
         printJoinig(null);
@@ -39,6 +51,36 @@ public class ExPersonStream {
         System.out.println("To Map");
         printToMap(people);
         printToMap(null);
+    }
+
+    public static void printReduce( List<Person> people ) {
+        if ( people != null) 
+            people.stream()
+                .filter(f -> f != null)     
+                .reduce((p1, p2) -> p1.getAge() > p2.getAge() ? p1 : p2)           
+                .ifPresent(System.out::println);
+                
+    }
+
+    public static void printReduce1( List<Person> people ) {
+        if ( people != null) 
+            System.out.println( "The new Person is " + 
+                people.stream()
+                    .filter(f -> f != null)  
+                    .reduce( new Person ("", 0), (p1, p2) -> p1.getAge() > p2.getAge() ? p1 : p2)
+                    .getName()         
+                    
+             );          
+    }
+
+    public static void printReduce2( List<Person> people ) {
+        if ( people != null) 
+            System.out.println( "The sum of all ages is " + 
+                people.stream()
+                    .filter( f -> f != null )
+                    .map( f-> f.getAge())
+                    .reduce( 15 , (p1, p2) -> p1 + p2 )     
+             );          
     }
 
     public static void printPersonStartsWithP(List<Person> people) {

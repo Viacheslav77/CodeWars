@@ -3,27 +3,27 @@ package javaExample.main;
 import java.util.Arrays;
 import java.util.List;
 
-public class Example7 {
+public class ExFunctionalInterface {
 
     public static void main(String[] args) {
-        Example7 example = new Example7();
+        ExFunctionalInterface example = new ExFunctionalInterface();
         List<Integer> integers = Arrays.asList( 15, 10, 7, 42 , null);   
         MyInterface m = example::getNumber;
-        System.out.println(m.get(integers));
-        System.out.println(m.get(null));
+        System.out.println( m.myGet(integers) );
+        System.out.println( m.myGet(null) );
     }
 
-    int getNumber( List<Integer> list ) {
+    int getNumber( List< Integer > list ) {
         return list == null ?  0 :
             list.stream()
-                .map( x-> x!=null ? x : 0)
+                .filter( x -> x!=null )
                 .reduce((x, y) -> x + y)
                 .get();
     }
 
     @FunctionalInterface
     interface MyInterface {
-        int get( List<Integer> list );
+        int myGet( List<Integer> list );
     }
 
 }

@@ -1,6 +1,5 @@
 package javaExample.main;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -37,10 +36,11 @@ public class ExampleLymda<k> {
 
         printerHub.put("one", m -> System.out.println("One - printerHub + " + m));
         printerHub.put("two", System.out::println);
-        printerHub.put("three", m -> {
-            System.out.println("***********");
-            System.out.println("three " + m);
-            System.out.println("***********");
+        printerHub.put("three", 
+            m -> {
+                System.out.println("***********");
+                System.out.println("three " + m);
+                System.out.println("***********");
         });
 
         printerHub.get("one").printString("Hello1");
@@ -50,27 +50,28 @@ public class ExampleLymda<k> {
         List<String> emList = Arrays.asList("Nasty", "Kosty", "Pety", "Nensi", null);
         List<String> filterNames = new ArrayList<>();
 
-        emList.stream().filter(n -> n != null ? n.startsWith("N") : false).forEach(System.out::println);
+        emList.stream()
+            .filter(n -> n != null ? n.startsWith("N") : false)
+            .forEach(System.out::println);
         emList = null;
 
-        filterNames = 
-            emList == null ? new ArrayList <> () : 
-                emList.stream().filter(n -> {
-                    if (n != null) {
-                        return n.startsWith("N");
-                    }
-                    return false;
-                }).collect(Collectors.toList());
+        filterNames =  emList == null ? new ArrayList <> () : 
+                emList.stream()
+                    .filter( n -> n != null ? n.startsWith("N") : false )
+                    .collect(Collectors.toList());
 
         System.out.println(filterNames);
 
-        Stream.of("aa1", "aa2", "aa3", "aa4", null).filter(s -> {
-            s = s != null ? s : "Null";
-            System.out.println("filter " + s);
-            return s.startsWith("a");
-        }).sorted((s1, s2) -> {
-            return s1.compareTo(s2);
-        }).forEach(s -> System.out.println("forEach" + s));
+        Stream.of("aa1", "aa2", "aa3", "aa4", null)
+            .filter(s -> {
+                s = s != null ? s : "Null";
+                System.out.println("filter " + s);
+                return s.startsWith("a");
+            })
+            .sorted((s1, s2) -> {
+                return s1.compareTo(s2);
+            })
+            .forEach(s -> System.out.println("forEach" + s));
         ;
 
     }

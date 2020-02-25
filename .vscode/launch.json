@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExPersonStreamCollectReduse",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExPersonStreamCollectReduse",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExStreamFlatMapAndReduce",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExStreamFlatMapAndReduce",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExPersonStream",
             "request": "launch",
             "mainClass": "javaExample.main.ExPersonStream",
