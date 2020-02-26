@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExRegex",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExRegex",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExFuncInter2",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExFuncInter2",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExPersonStreamCollectReduse",
             "request": "launch",
             "mainClass": "javaExample.main.ExPersonStreamCollectReduse",
