@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExAlgoritmSort",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExAlgoritmSort",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExFooBar",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExFooBar",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ExEmploeese",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExEmploeese",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExRegex",
             "request": "launch",
             "mainClass": "javaExample.main.ExRegex",
