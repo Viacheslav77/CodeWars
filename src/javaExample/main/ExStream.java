@@ -8,6 +8,14 @@ import java.util.stream.IntStream;
 public class ExStream {
 
     public static void main(String[] args) {
+
+
+        // try {
+        //    return; 
+        // } catch (Exception e) {
+        //     System.out.println(e);
+        // }
+        
         
        int [] arr = IntStream.rangeClosed(1, 5).toArray();
 
@@ -18,7 +26,27 @@ public class ExStream {
        for (int i = 0; i < arr.length; i++) {
            System.out.println(arr[i]);
        }
+       char ch = 0x000A;
+       System.out.print(ch);
+
+       String a = new String("abc");
+       String b = new String("abc");
+
+       System.out.println(a.equals(b));
+       System.out.println(a == b);
+
+       String c = new String("ab");
+       String d = "abc";
+       String e = c + "c";
+
+       System.out.println(c.equals(e));
+       System.out.println(c == e);
+
+       System.out.println(5/0);
     }
+
+    
+     
 
     }
 
@@ -28,7 +56,7 @@ public class ExStream {
           arr = null;
           System.out.println(Arrays.toString(arr));
       }
-    
+
         
     }
 

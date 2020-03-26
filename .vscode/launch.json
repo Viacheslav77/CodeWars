@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExEnum",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExEnum",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExAlgoritmSort",
             "request": "launch",
             "mainClass": "javaExample.main.ExAlgoritmSort",
