@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExTest",
+            "request": "launch",
+            "mainClass": "javaExample.main.ExTest",
+            "projectName": "CodeWars_954047dc"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExOverloading",
             "request": "launch",
             "mainClass": "javaExample.main.ExOverloading",

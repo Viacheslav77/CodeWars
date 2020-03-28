@@ -4,12 +4,16 @@ import java.util.Arrays;
 
 public class ExOverloading {
 
-    public static void main(String... args) {
-        ExOverloading ol = new ExOverloading();
+    public static void main(String[] args) {
+        Overloading ol = new Overloading();
         short b = 5;
         ol.method(b);
 
     }
+    
+}
+class Overloading {
+
 
     void method(byte... i) {
         System.out.println("byte..." + Arrays.toString(i));
